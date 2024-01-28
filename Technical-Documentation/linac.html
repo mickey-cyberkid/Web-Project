@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Linac Technical Documentation</title>
+      <style>
+         /* style for background */
+         body{background-color: rgb(255, 255, 55);
+            border-radius: 7px;
+            background-image: url("images/mask.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+              font-family: "Times New Roman";
+              color: black;
+         }
+         /* style for heading */
+         h1{ color: rgba(0 , 0, 0, 5);
+             text-align: center;
+             border: 3px grey solid;
+             border-radius: 9px;
+             box-shadow: 3px 2px;
+             
+         }
+         .sectiondiv, .snapshot{
+            font-size:large;
+            font-weight: 500;
+            border: 4px groove grey;
+            border-radius: 6px;
+         }
+         button{background-color: rgb(18, 144, 194);
+            color:aqua;
+            border: 2px solid greenyellow;
+            border-radius: 6px;
+        }
+      </style>
+      
+   </head>
+   <body>
+    <h1> Linear Accelerator </h1><br>
+    <div id="article">
+        <p class="snapshot">A medical <b>Linear Accelerator (LINAC)</b> customizes high energy x-rays or electrons to conform to a tumor's shape and destroy cancer cells while sparing surrounding normal tissue. It features several built-in safety measures to ensure that it will deliver the dose as prescribed and is routinely checked by a <b>medical physicist</b> to ensure it is working properly. </p>
+        <p class="snapshot">If you're scheduled for <b>radiation therapy</b> using a LINAC, your <b>radiation oncologist</b> will collaborate with a <b>radiation dosimetrist</b> and a medical physicist to develop a treatment plan for you. They will double-check this plan before treatment begins and implement <b>quality assurance </b>procedures to ensure that each treatment is delivered in the exact same manner.</p><br>
+
+        <div class="sectiondiv">
+                    <h2>What is this equipment used for?</h2>
+                    <p>A medical linear accelerator (LINAC) is the device most commonly used for external beam radiation treatments&nbsp;for patients with cancer. It delivers high-energy x-rays&nbsp;or electrons to the region of the patient's tumor. These treatments can be designed in such a way that they destroy the cancer cells while sparing the surrounding normal tissue. The LINAC is used to treat all body sites, using conventional techniques, <a href="https://www.radiologyinfo.org/en/info/imrt"><em>Intensity-Modulated Radiation Therapy (IMRT)</em></a><em>,</em> Volumetric Modulated Arc Therapy (VMAT), <a href="https://www.radiologyinfo.org/en/info/igrt"><em>Image Guided Radiation Therapy (IGRT)</em></a>, <a href="https://www.radiologyinfo.org/en/info/stereotactic"><em>Stereotactic Radiosurgery (SRS) and Stereotactic Body Radio Therapy (SBRT)</em></a><em>.</em></p>
+        </div>
+            <p class="top-link"><a class="top" href="#top"><button>Top of page</button></a></p>
+        <div class="sectiondiv">
+        <h2>How does the equipment work?</h2>
+        <p>The linear accelerator uses microwave technology (similar to that used for radar) to accelerate electrons in a part of the accelerator called the "wave guide," then allows these electrons to collide with a heavy metal target to produce high-energy x-rays. These high energy x-rays are shaped as they exit the machine to conform to the shape of the patient's tumor and the customized beam is directed to the patient's tumor. The beam is usually shaped by a <b>multileaf collimator</b> that is incorporated into the head of the machine. The patient lies on a moveable treatment couch and lasers are used to make sure the patient is in the proper position. The treatment couch can move in many directions including up, down, right, left, in and out. The beam comes out of a part of the accelerator called a <b>gantry</b>, which can be rotated around the patient. Radiation can be delivered to the tumor from many angles by rotating the gantry and moving the treatment couch.</p>
+        </div>
+        <p class="top-link"><a class="top" href="#top"><button>Top of page</button></a></p>
+        <div class="sectiondiv">
+            <h2>Who operates this equipment?</h2>
+            <p>The patient's radiation oncologist&nbsp;prescribes the appropriate <b>treatment volume</b> and <b>dosage</b>. The medical physicist&nbsp;and the dosimetrist&nbsp;determine how to deliver the prescribed dose and calculate the amount of time it will take the accelerator to deliver that dose. Radiation therapists&nbsp;operate the linear accelerator and give patients their daily radiation treatments.</p>
+        </div>
+        <p class="top-link"><a class="top" href="#top"><button>Top of page</button></a></p>
+        <div class="sectiondiv">
+            <h2>How is safety ensured?</h2>
+            <p>Patient safety is very important and is assured in several ways.</p>
+            <p>Before treatment is delivered to the patient, a treatment plan is developed and approved by the radiation oncologist in collaboration with the radiation dosimetrist and medical physicist. The plan is double-checked before treatment is given and quality-assurance procedures are performed to ensure that the treatment will be delivered as planned.</p>
+            <p><b>Quality assurance</b> of the linear accelerator is very important. There are several systems built into the accelerator so that it will not deliver a higher dose than the radiation oncologist has prescribed. Each morning before any patient is treated, the radiation therapist performs checks on the machine to make sure that the radiation intensity is uniform across the beam and that it is working properly. In addition, the medical physicist conducts more detailed monthly and annual checks of the linear accelerator.</p>
+            <p>Modern linear accelerators also have internal checking systems that do not allow the machine to be turned on unless all the prescribed treatment requirements are met.</p>
+            <p>During treatment, the radiation therapist continuously observes the patient using a closed-circuit television monitor. There is also a microphone in the treatment room so that the patient can speak to the therapist if needed. Port films (x-rays taken with the treatment beam) or other imaging tools such as cone beam CT are checked regularly to make sure that the beam position doesn't vary from the original plan.</p>
+            <p>Safety of the staff operating the linear accelerator is also important. The linear accelerator sits in a room with lead and concrete walls so that the high-energy x-rays are shielded and no one outside of the room is exposed to the x-rays. The radiation therapist must turn on the accelerator from outside the treatment room. Because the accelerator only emits radiation when it is actually turned on, the risk of accidental exposure is extremely low.</p>
+        </div>
+            <p class="top-link"><a class="top" href="#top"><button>Top of page</button></a></p>
+        </div>
+
+        <div id="EOC">
+            <!-- Reference -->
+            <p><em>For more information about this and other radiology procedures, please visit <a href="https://www.radiologyinfo.org">Radiologyinfo.org</a></em></p>
+        </div>
+
+    </body>
+    <script>
+        var winHeight = window.innerHeight;
+        var winWidth = window.innerWidth;
+        var body = document.getElementsByTagName("body")[0];
+
+        if(winHeight > 377 || winWidth > 627){
+            body.style.backgroundImage = `url('images/pendant.jpg')` 
+        }
+        else{
+            body.style.backgroundImage = 'url("images/mask2.jpeg")';
+        }
+      </script>
+</html>
